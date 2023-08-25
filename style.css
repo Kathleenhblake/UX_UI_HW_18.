@@ -7,18 +7,26 @@
     vertical-align: top;
 }
 
+nav ul {
+     display:flex;
+    gap: 20 px;
+    justify-content: flex-end;
+    
+}
 
-ul {
-    width: 50%;
-    /* margin-left: auto; */
-    align-items: right;
-
+.navigation{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff
+    ;
 
 }
 
 li {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 50px;
 }
 
 /* .logo {
@@ -31,7 +39,6 @@ li {
     margin-left: auto;
     margin-right: auto;
     width: 33%;
-
 }
 
 .heroImg {
@@ -45,10 +52,10 @@ li {
 }
 
 .content {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
 }
 
 #tagline {
@@ -122,8 +129,9 @@ li {
 
 p {
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    width: 400px;
+    width: 600px;
 }
 
 .flexContainer {
@@ -141,6 +149,10 @@ hr {
     background: #B4C8C0;
     height: 37px;
     width: 100%;
+}
+
+#skillsLogos {
+    height: 125px;
 }
 
 /* footer */
@@ -165,15 +177,130 @@ footer {
     font-family: Ruluko;
     font-size: 30px;
     font-style: normal;
-    /* font-weight: 400; */
     align-items: center;
-    /* display: flex; */
     flex-direction: column;
     justify-content: center;
 }
+.mySkills {
+  text-align: center; 
+}
+
+.flexContainer {
+  margin: 0 auto; 
+}
 
 #linkedinLogo {
-    /* justify-content: right; */
+    justify-content: right; 
     height: 50px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
+
+/* Media Query */
+/* Common styles */
+.inline-block {
+    display: block;
+  }
+  
+  /* Mobile-first styles */
+  ul {
+    width: 100%;
+    text-align: center;
+  }
+  
+  #logo {
+    width: 60%; /* Adjust the logo size for mobile */
+    margin: 0 auto; /* Center the logo horizontally */
+  }
+  
+  .heroImg {
+    /* /* padding: 15px; */
+    text-align: center; 
+    position: relative;
+  }
+  
+  .content {
+    /* width: 80%; */
+    /* margin: 0 auto; Center the content horizontally */
+  }
+
+  .stackedContent {
+    position: absolute; 
+    text-align: center; /* Center-align the text and button */
+  }
+  
+  #tagline {
+    font-size: 33px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-bottom: 20px;
+    ;
+  }
+  
+  .resumeButton {
+    width: 150px; /* Make the button full width */
+    text-align: center;
+    
+  }
+  
+  .projectImage {
+    width: 100%;
+  }
+  
+  .projects {
+    padding: 15px;
+  }
+  
+  .projectDescription {
+    text-align: center;
+    padding: 15px;
+  }
+  
+  p {
+    width: 87%;
+  }
+  
+  .flexContainer {
+    flex-direction: column;
+  }
+  
+  .flexItem {
+    width: 100%;
+  }
+  
+  hr {
+    height: 20px;
+  }
+  
+  #skillsLogos {
+    height: 100px;
+  }
+  
+  footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  #footerInfo {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px; 
+  }
+  
+  #contactInfo {
+    font-size: 20px;
+  }
+  
+  #linkedinLogo {
+    height: 30px;
+    margin-top: 15px;
+  }
+  
+  /* Media query for tablets and larger screens */
+  @media (min-width: 600px) {
+    .flexContainer {
+      flex-direction: row;
+    }
+  }
+
+    
